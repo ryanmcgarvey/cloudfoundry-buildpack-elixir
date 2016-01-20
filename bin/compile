@@ -40,7 +40,7 @@ commands_to_run=(
 
   restore_app
   app_dependencies
-  copy_hex
+  # copy_hex
   compile_app
   backup_app
   backup_mix
