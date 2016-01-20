@@ -83,10 +83,11 @@ function backup_mix() {
 }
 
 function install_hex() {
-  output_section "Installing Hex"
   if [ -z ${hex_source} ]; then
+    output_section "Installing Hex force"
     mix local.hex --force
   else
+    output_section "Installing Hex archive"
     mix archive.install ${hex_source} --force
   fi
 }
